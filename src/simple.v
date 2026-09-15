@@ -19,7 +19,7 @@
 
 module simple(
 	      input [2:0]  a,
-   
+   output [6:0] result
 // add your code here
 	assign result = 7'b1111111 >> (7 - a);	
 endmodule
