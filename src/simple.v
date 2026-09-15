@@ -19,7 +19,7 @@
 
 module simple(
 	      input [2:0]  a,
-   output [6:0] result
+	output reg [6:0] result);
 // add your code here
 	always @(*) begin
 		case(a)
@@ -31,6 +31,8 @@ module simple(
 			5: result = 7'b0011111;
 			6: result = 7'b0111111;
 			7: result = 7'b1111111;
+		endcase
+	end
 endmodule
 
 
